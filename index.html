@@ -6,62 +6,136 @@
     <title>TimeTracker - Din arbejdstidsassistent</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="logo">⏱️ TimeTracker</div>
-        <nav>
+        <div class="logo">⏱️ <span>TimeTracker</span></div>
+        <nav id="navbar">
             <a href="#features">Funktioner</a>
             <a href="#pricing">Priser</a>
             <a href="#download">Download</a>
             <a href="#contact">Kontakt</a>
+            <button id="theme-toggle" title="Skift tema"><i class="fas fa-moon"></i></button>
         </nav>
+        <div class="mobile-nav-toggle" id="mobile-toggle"><i class="fas fa-bars"></i></div>
     </header>
 
     <section class="hero">
-        <h1>Track din arbejdstid automatisk</h1>
+        <div class="hero-bg"></div>
+        <h1>Track din arbejdstid <span class="highlight">automatisk</span></h1>
         <p>TimeTracker hjælper dig med at holde styr på arbejdstid, opgaver og fakturering – helt automatisk.</p>
-        <a class="cta-button" href="#download">📥 Prøv gratis i 14 dage</a>
+        <a class="cta-button pulse" href="#download">📥 Prøv gratis i 14 dage</a>
+        <div class="hero-image">
+            <img src="https://img.icons8.com/color/96/time-machine.png" alt="Time illustration">
+        </div>
     </section>
 
     <section id="features" class="section">
         <h2>🔧 Funktioner</h2>
-        <ul class="features">
-            <li>✅ Automatisk tracking af programmer og dokumenter</li>
-            <li>📊 Rapporter og eksport til PDF/Excel</li>
-            <li>🧠 Intelligente kategorier og regler</li>
-            <li>🔐 Licenssystem og sikkerhed</li>
-            <li>🌙 Mørkt tema og moderne brugerflade</li>
-        </ul>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-robot"></i>
+                <h3>Automatisk tracking</h3>
+                <p>Registrér programmer, filer og aktiviteter helt uden manuelt arbejde.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-pie"></i>
+                <h3>Rapporter & eksport</h3>
+                <p>Eksportér arbejdstider til PDF eller Excel med ét klik.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Intelligente kategorier</h3>
+                <p>Regler og AI der hjælper dig med at sortere arbejdet smart.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-lock"></i>
+                <h3>Sikkerhed & licens</h3>
+                <p>Al data gemt lokalt – med licenssystem for ekstra sikkerhed.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-moon"></i>
+                <h3>Mørkt tema</h3>
+                <p>Moderne og øjenvenligt mørkt tema – eller lys, hvis du vil!</p>
+            </div>
+        </div>
     </section>
 
-    <section id="pricing" class="section dark">
+    <section id="testimonials" class="section dark">
+        <h2>🤩 Hvad siger brugerne?</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <p>“Super nemt! Jeg glemmer aldrig at registrere tid længere.”</p>
+                <span>- Mette, konsulent</span>
+            </div>
+            <div class="testimonial">
+                <p>“TimeTracker har sparet mig timevis af manuel tastearbejde.”</p>
+                <span>- Thomas, selvstændig</span>
+            </div>
+            <div class="testimonial">
+                <p>“Elsker PDF-eksport og at alt bare kører af sig selv.”</p>
+                <span>- Pernille, revisor</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="section">
         <h2>💰 Priser</h2>
-        <div class="price-box">
-            <h3>Gratis prøveperiode</h3>
-            <p>Fuld funktionalitet i 14 dage – uden betalingskort.</p>
-            <p><strong>0 kr.</strong></p>
-        </div>
-        <div class="price-box">
-            <h3>Pro-licens</h3>
-            <p>For professionelle og virksomheder</p>
-            <p><strong>100 kr./md</strong></p>
+        <div class="pricing-cards">
+            <div class="price-box highlight">
+                <h3><i class="fas fa-gift"></i> Gratis prøveperiode</h3>
+                <p>Fuld funktionalitet i 14 dage – uden betalingskort.</p>
+                <p><strong>0 kr.</strong></p>
+            </div>
+            <div class="price-box">
+                <h3><i class="fas fa-star"></i> Pro-licens</h3>
+                <p>For professionelle og virksomheder</p>
+                <p><strong>100 kr./md</strong></p>
+            </div>
         </div>
     </section>
 
-    <section id="download" class="section">
+    <section id="download" class="section dark">
         <h2>📥 Download</h2>
         <p>Installer TimeTracker til Windows:</p>
-        <a class="cta-button" href="TimeTrackerSetup.exe">🔽 Download TimeTrackerSetup.exe</a>
+        <a class="cta-button pulse" href="TimeTrackerSetup.exe">🔽 Download TimeTrackerSetup.exe</a>
     </section>
 
-    <section id="contact" class="section dark">
+    <section id="contact" class="section">
         <h2>📧 Kontakt</h2>
         <p>Har du spørgsmål? Skriv til os på <a href="mailto:support@timetracker.dk">support@timetracker.dk</a></p>
     </section>
 
     <footer>
-        © 2025 TimeTracker · Alle rettigheder forbeholdes · Copyright
+        <div class="footer-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="mailto:support@timetracker.dk"><i class="fas fa-envelope"></i></a>
+        </div>
+        <div class="footer-text">
+            © 2025 TimeTracker · Alle rettigheder forbeholdes · Copyright
+        </div>
+        <button id="scroll-top" title="Til toppen"><i class="fas fa-arrow-up"></i></button>
     </footer>
+
+    <script>
+    // Mobile menu toggle
+    document.getElementById('mobile-toggle').onclick = function() {
+        document.getElementById('navbar').classList.toggle('open');
+    };
+    // Scroll to top
+    document.getElementById('scroll-top').onclick = function() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    };
+    // Dark mode toggle
+    document.getElementById('theme-toggle').onclick = function() {
+        document.body.classList.toggle('dark');
+        this.innerHTML = document.body.classList.contains('dark')
+            ? '<i class="fas fa-sun"></i>'
+            : '<i class="fas fa-moon"></i>';
+    };
+    </script>
 </body>
 </html>

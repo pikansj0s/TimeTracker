@@ -291,3 +291,89 @@ body.dark .feature-card p {
     color: #fff !important;      /* helt hvid tekst */
     opacity: 0.88;               /* evt. lidt nedtonet så det ikke blænder */
 }
+
+/* --- TESTIMONIAL-BOKSE --- */
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;
+    margin-top: 1.8rem;
+}
+
+.testimonial {
+    background: linear-gradient(120deg, rgba(46,204,113,0.12) 80%, rgba(0,0,0,0.1) 100%);
+    border-radius: 18px;
+    min-width: 320px;
+    max-width: 420px;
+    width: 100%;
+    padding: 1.7rem 1.5rem 1.3rem 1.5rem;
+    color: #e4ffe7;
+    font-size: 1.18rem;
+    font-style: italic;
+    font-weight: 500;
+    border-left: none;
+    border: 1.5px solid #38e391;
+    box-shadow: 0 0 18px 0 #21ff8c40;
+    margin-bottom: 0.8rem;
+    transition: box-shadow 0.24s;
+}
+.testimonial span {
+    display: block;
+    font-size: 1.05rem;
+    font-style: normal;
+    color: #72f0ab;
+    margin-top: .9rem;
+    font-weight: 600;
+}
+
+/* --- PRISBOKSE --- */
+.pricing-cards {
+    display: flex;
+    gap: 2.4rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.price-box {
+    background: var(--card-bg);
+    color: var(--text);
+    padding: 2.5rem 2rem;
+    margin: 1.3rem 0;
+    border-radius: var(--border-radius);
+    min-width: 220px;
+    max-width: 320px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    border: 2px solid #333;
+    transition: box-shadow .35s, border .35s, transform .22s;
+    position: relative;
+}
+.price-box.highlight {
+    border: 2px solid #21ff8c;
+    box-shadow: 0 0 24px 3px #21ff8c50, 0 2px 22px -4px #161;
+    z-index: 1;
+}
+.price-box.highlight strong {
+    color: #21ff8c;
+}
+.price-box strong {
+    font-size: 2rem;
+    color: var(--main-dark);
+    font-weight: 700;
+}
+.price-box:not(.highlight) {
+    border: 2px solid #fff;
+    box-shadow: none;
+}
+.price-box h3 i, .price-box.highlight h3 i {
+    color: #21ff8c;
+    margin-right: .5em;
+}
+
+@media (max-width: 1100px) {
+    .testimonials { flex-direction: column; align-items: center; }
+    .testimonial { min-width: 0; max-width: 100%; }
+    .pricing-cards { flex-direction: column; align-items: center; }
+    .price-box { min-width: 0; max-width: 100%; }
+}
+

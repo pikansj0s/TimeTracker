@@ -121,6 +121,10 @@
     </footer>
 
     <script>
+    // Start altid på mørkt tema!
+    document.body.classList.add('dark');
+    document.getElementById('theme-toggle').innerHTML = '<i class="fas fa-sun"></i>';
+
     // Mobile menu toggle
     document.getElementById('mobile-toggle').onclick = function() {
         document.getElementById('navbar').classList.toggle('open');

@@ -194,72 +194,7 @@ nav a:hover {
     box-shadow: 0 12px 38px -12px var(--main);
 }
 
-#testimonials {
-    background: linear-gradient(120deg, #252e3d 70%, #263247 100%);
-    color: #fff;
-    border-radius: var(--border-radius);
-    margin-top: 2.5rem;
-    box-shadow: var(--shadow);
-}
-.testimonials {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.5rem;
-    justify-content: center;
-    margin-top: 1.8rem;
-}
-.testimonial {
-    background: rgba(44,83,100,.09);
-    border-left: 5px solid var(--main);
-    border-radius: 12px;
-    max-width: 320px;
-    padding: 1.3rem 1.2rem 1rem 1.2rem;
-    font-style: italic;
-    box-shadow: 0 2px 10px -6px rgba(0,0,0,.09);
-}
-.testimonial span {
-    display: block;
-    font-size: .98rem;
-    font-style: normal;
-    color: #b6f5ca;
-    margin-top: .5rem;
-    font-weight: 600;
-}
-
-.pricing-cards {
-    display: flex;
-    gap: 2.4rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.price-box {
-    background: var(--card-bg);
-    color: var(--text);
-    padding: 2.5rem 2rem;
-    margin: 1.3rem 0;
-    border-radius: var(--border-radius);
-    min-width: 220px;
-    max-width: 320px;
-    box-shadow: var(--shadow);
-    text-align: center;
-    border: 2px solid #f3f3f7;
-    transition: border var(--transition), box-shadow var(--transition), transform var(--transition);
-}
-.price-box.highlight, .price-box:hover {
-    border: 2px solid var(--main);
-    box-shadow: 0 14px 34px -14px var(--main);
-    transform: scale(1.035);
-}
-.price-box h3 i {
-    color: var(--main);
-    margin-right: .5em;
-}
-.price-box strong {
-    font-size: 2rem;
-    color: var(--main-dark);
-    font-weight: 700;
-}
-
+/* DARK MODE OVERRIDES */
 .dark, body.dark .section, body.dark #testimonials {
     background: var(--bg-dark) !important;
     color: var(--text-light) !important;
@@ -270,7 +205,14 @@ body.dark {
 }
 body.dark .feature-card, body.dark .price-box {
     background: var(--card-dark);
-    color: var(--text-light);
+    color: #fff;
+}
+body.dark .feature-card h3,
+body.dark .feature-card i {
+    color: #9efcbf !important;
+}
+body.dark .feature-card p {
+    color: #fff !important;
 }
 body.dark .testimonial {
     background: rgba(46,204,113,0.08);

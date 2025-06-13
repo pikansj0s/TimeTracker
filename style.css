@@ -282,3 +282,12 @@ footer {
     .testimonials { gap: 1rem; }
     #scroll-top { right: 0.5rem; bottom: 0.5rem; }
 }
+
+body.dark .feature-card h3,
+body.dark .feature-card i {
+    color: #9efcbf !important; /* stadig grøn til overskrift og ikon */
+}
+body.dark .feature-card p {
+    color: #fff !important;      /* helt hvid tekst */
+    opacity: 0.88;               /* evt. lidt nedtonet så det ikke blænder */
+}

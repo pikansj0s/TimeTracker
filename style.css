@@ -343,8 +343,10 @@ footer {
 
 body.dark .feature-card h3,
 body.dark .feature-card i {
-    color: #9efcbf !important; /* Klar grøn overskrift og ikon */
+    color: #9efcbf !important; /* stadig grøn til overskrift og ikon */
 }
 body.dark .feature-card p {
-    color: #a3cbb6 !important; /* Lys grøn/grå tekst for god læsbarhed */
+    color: #fff !important;      /* helt hvid tekst */
+    opacity: 0.88;               /* evt. lidt nedtonet så det ikke blænder */
 }
+
